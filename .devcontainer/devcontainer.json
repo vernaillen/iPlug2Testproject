@@ -1,0 +1,14 @@
+{
+    "name": "iPlug2WAM",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "forwardPorts": [
+            6931
+        ],
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "cschlosser.doxdocgen"
+    ],
+    "postCreateCommand": "echo 'emcc=$(emcc --version)'"
+}
